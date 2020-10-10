@@ -1,0 +1,319 @@
+/* 共通のスタイル */
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 12px;
+}
+
+.flex {
+  display: flex;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+header,
+footer {
+  height: 70px;
+  background-color: black;
+}
+
+header p,
+footer p {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  line-height: 70px;
+  margin-left: 30px;
+}
+
+.header-nav li,
+.footer-nav li {
+  display: inline-block;
+  margin-right: 30px;
+  line-height: 70px;
+}
+
+.header-nav a,
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+.header-nav a:hover,
+.footer-nav a:hover {
+  color: #cccccc;
+}
+
+#eyecatch {
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 720px;
+  position: relative;
+}
+
+#eyecatch h1 {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.news {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50px;
+}
+
+.news-ttl {
+  background-color: white;
+  width: 80%;
+}
+
+.news-ttl p {
+  padding: 2px 0 8px 2px;
+  font-size: 12px;
+}
+
+.news-ttl a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.news button {
+  background-color: black;
+  color: white;
+  border: none;
+  width: 20%;
+}
+
+.news-ttl a:hover {
+  cursor: pointer;
+}
+
+#mission {
+  height: 400px;
+  background-color: black;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.mission-txt {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(0, -50%);
+}
+
+.mission-txt h2 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.mission-txt p {
+  color: white;
+  font-size: 12px;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+}
+
+.mission-txt button {
+  background-color: white;
+  border: none;
+  padding: 5px 15px;
+}
+
+#mission img {
+  height: 350px;
+  position: absolute;
+  bottom: -40px;
+  right: 50px;
+}
+
+#service {
+  background-color: #cecece;
+}
+
+#service h2 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#service img {
+  width: 50%;
+  position: absolute;
+}
+
+.service-txt {
+  box-sizing: border-box;
+  width: 40%;
+  height: 270px;
+  padding: 70px;
+  background-color: white;
+  font-size: 12px;
+  position: absolute;
+}
+
+.service-txt p {
+  padding-top: 10px;
+  line-height: 1.5em;
+}
+
+.service-txt button {
+  background-color: white;
+  padding: 5px 15px;
+  border: solid 1px black;
+  display: block;
+  margin: 10px 0 0 auto;
+}
+
+.service1 {
+  position: relative;
+  height: 700px;
+}
+
+.service2 {
+  position: relative;
+  height: 620px;
+}
+
+.service1 img {
+  top: 0;
+  right: 0;
+}
+
+.service1 .service-txt {
+  top: 100px;
+  right: 40%;
+}
+
+.service2 .service-txt {
+  top: 100px;
+  left: 40%;
+}
+
+#info a {
+  color: white;
+  text-decoration: none;
+}
+
+.info-contents {
+  padding: 150px 0;
+}
+
+.company {
+  display: block;
+  background: url(../img/company.jpeg);
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 250px;
+  position: relative;
+}
+
+.recruit {
+  display: block;
+  background: url(../img/recruit.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 250px;
+  position: relative;
+}
+
+.center-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.center-txt h2 {
+  line-height: 1.5em;
+}
+
+.center-txt h3 {
+  font-size: 12px;
+}
+
+.faq {
+  background-color: black;
+  width: 80%;
+  margin: 0 auto 150px;
+  padding: 30px;
+  display: flex;
+}
+
+.faq h3 {
+  line-height: 24px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+#contact {
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: white;
+  position: relative;
+}
+
+#contact h2 {
+  line-height: 1.5em;
+}
+
+.b-txt {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
+.s-txt {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+#contact button {
+  background-color: transparent;
+  border: solid 1px white;
+  color: white;
+  padding: 5px 15px;
+}
+
+footer {
+  height: 90px;
+  text-align: center;
+  color: white;
+}
+
+small {
+  font-size: 12px;
+}
