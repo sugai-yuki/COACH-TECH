@@ -1,10 +1,10 @@
 /* 共通のスタイル */
 
-h2 {
+.section-ttl {
   font-size: 24px;
 }
 
-h3 {
+.sub-ttl {
   font-size: 12px;
 }
 
@@ -28,14 +28,15 @@ h3 {
   justify-content: space-between;
 }
 
-header,
-footer {
+/* 固有のスタイル */
+
+.header{
   height: 70px;
   background-color: black;
 }
 
-header p,
-footer p {
+.header-logo,
+.footer-logo {
   font-size: 18px;
   font-weight: bold;
   color: white;
@@ -62,7 +63,7 @@ footer p {
   color: #cccccc;
 }
 
-#eyecatch {
+.eyecatch {
   background: url(../img/eyecatch.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -70,7 +71,7 @@ footer p {
   position: relative;
 }
 
-#eyecatch h1 {
+.eyecatch-txt {
   font-size: 48px;
   font-weight: bold;
   font-style: italic;
@@ -78,6 +79,7 @@ footer p {
   position: absolute;
   top: 60%;
   left: 10%;
+  text-align: center;
 }
 
 .news {
@@ -93,30 +95,33 @@ footer p {
   width: 80%;
 }
 
-.news-ttl p {
+.news-ttl-date {
   padding: 2px 0 8px 2px;
   font-size: 12px;
 }
 
-.news-ttl a {
-  color: black;
-  text-decoration: none;
-  font-size: 12px;
+.news-ttl-cont{
   padding-left: 10px;
 }
 
-.news button {
+.news-ttl-cont-txt {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.news .btn {
   background-color: black;
   color: white;
   border: none;
   width: 20%;
 }
 
-.news-ttl a:hover {
+.news-ttl-cont-txt:hover {
   cursor: pointer;
 }
 
-#mission {
+.mission {
   height: 400px;
   background-color: black;
   position: relative;
@@ -131,41 +136,41 @@ footer p {
   transform: translate(0, -50%);
 }
 
-.mission-txt h2 {
+.mission-txt .section-ttl {
   color: white;
   padding-bottom: 20px;
 }
 
-.mission-txt p {
+.mission-txt-cont {
   color: white;
   font-size: 12px;
   line-height: 1.5em;
   padding-bottom: 15px;
 }
 
-.mission-txt button {
+.mission-txt .btn {
   background-color: white;
   border: none;
   padding: 5px 15px;
 }
 
-#mission img {
+.mission-img {
   height: 350px;
   position: absolute;
   bottom: -40px;
   right: 50px;
 }
 
-#service {
+.service {
   background-color: #cecece;
 }
 
-#service h2 {
+.service .section-ttl {
   text-align: center;
   padding: 15px 0;
 }
 
-#service img {
+.service-img {
   width: 50%;
   position: absolute;
 }
@@ -173,19 +178,18 @@ footer p {
 .service-txt {
   box-sizing: border-box;
   width: 40%;
-  height: 270px;
   padding: 70px;
   background-color: white;
   font-size: 12px;
   position: absolute;
 }
 
-.service-txt p {
+.service-txt-cont {
   padding-top: 10px;
   line-height: 1.5em;
 }
 
-.service-txt button {
+.service-txt .btn {
   background-color: white;
   padding: 5px 15px;
   border: solid 1px black;
@@ -203,7 +207,7 @@ footer p {
   height: 620px;
 }
 
-.service1 img {
+.service1 .service-img {
   top: 0;
   right: 0;
 }
@@ -218,33 +222,28 @@ footer p {
   left: 40%;
 }
 
-#info a {
+.info-conts {
+  padding: 150px 0;
+}
+
+.company,
+.recruit {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 48%;
+  height: 250px;
+  position: relative;
   color: white;
   text-decoration: none;
 }
 
-.info-contents {
-  padding: 150px 0;
-}
-
-.company {
-  display: block;
-  background: url(../img/company.jpeg);
-  background-size: cover;
-  background-position: center;
-  width: 48%;
-  height: 250px;
-  position: relative;
+.company{
+  background-image: url(../img/company.jpeg);
 }
 
 .recruit {
-  display: block;
-  background: url(../img/recruit.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 48%;
-  height: 250px;
-  position: relative;
+  background-image: url(../img/recruit.jpg);
 }
 
 .center-txt {
@@ -256,29 +255,28 @@ footer p {
   width: 100%;
 }
 
-.center-txt h2 {
+.center-txt .section-ttl {
   line-height: 1.5em;
-}
-
-.center-txt h3 {
-  font-size: 12px;
 }
 
 .faq {
   background-color: black;
   width: 80%;
+  box-sizing: border-box;
   margin: 0 auto 150px;
   padding: 30px;
   display: flex;
+  color: white;
+  text-decoration: none;
 }
 
-.faq h3 {
+.faq .sub-ttl {
   line-height: 24px;
   flex-grow: 1;
   text-align: center;
 }
 
-#contact {
+.contact {
   background: url(../img/contact-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -287,7 +285,7 @@ footer p {
   position: relative;
 }
 
-#contact h2 {
+.contact .section-ttl {
   line-height: 1.5em;
 }
 
@@ -301,19 +299,136 @@ footer p {
   padding-bottom: 20px;
 }
 
-#contact button {
+.contact .btn {
   background-color: transparent;
   border: solid 1px white;
   color: white;
   padding: 5px 15px;
 }
 
-footer {
+.footer {
   height: 90px;
+  background-color: black;
   text-align: center;
   color: white;
 }
 
-small {
+.copy-right {
   font-size: 12px;
+}
+
+/* resopnsive */
+
+@media screen and (max-width: 480px){
+  .hamberger{
+    position: absolute;
+    cursor: pointer;
+    top: 35px;
+    right: 20px;
+    transform: translate(0, -50%);
+    width: 40px;
+    height: 40px;
+  }
+
+  .hamberger-border{
+    position: absolute;
+    left: 2.5px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+  }
+
+  .hamberger-border:nth-of-type(1){
+    top: 10px;
+  }
+
+  .hamberger-border:nth-of-type(2){
+    top: 20px;
+  }
+
+  .hamberger-border:nth-of-type(3){
+    top: 30px;
+  }
+
+  .header-nav,
+  .footer-nav{
+    display: none;
+  }
+
+  .eyecatch-txt{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .news{
+    width: 100%;
+    min-height: 50px;
+    height: auto;
+  }
+
+  .mission{
+    margin-bottom: 30px;
+  }
+
+  .mission-txt .section-ttl{
+    line-height: 1.5em;
+  }
+
+  .mission-img{
+    height: 100px;
+  }
+
+  .service1,
+  .service2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .service-img{
+    width: 90%;
+    position: static;
+  }
+
+  .service-txt{
+    width: 90%;
+    position: static;
+    padding: 10px;
+  }
+
+  .info-conts{
+    flex-wrap: wrap;
+    padding: 50px 0;
+
+  }
+
+  .company,
+  .recruit{
+    width: 100%;
+  }
+
+  .faq{
+    width: 96%;
+    margin: 0 auto 50px;
+  }
+
+  .contact .center-txt{
+    width: 80%;
+  }
+
+  .s-txt{
+    padding-bottom: 40px;
+  }
+
+  .footer-txt{
+    justify-content: center;
+  }
+
+  .footer-logo{
+    margin: 0;
+  }
 }
